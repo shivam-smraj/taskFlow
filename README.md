@@ -17,7 +17,7 @@
 
 | Home Page | Admin Dashboard | Employee Dashboard |
 |:---------:|:---------------:|:-----------------:|
-| Hero landing page with features | Full team & task overview | Card-based task management |
+| ![Home](screenshots/home.png) | ![Admin](screenshots/admin.png) | ![Employee](screenshots/employee.png) |
 
 ---
 
@@ -91,8 +91,8 @@ Task__03/
 
 ```bash
 # Clone the repository
-git clone <your-repo-url>
-cd Task__03
+git clone https://github.com/shivam-smraj/taskFlow
+cd taskFlow
 
 # Install backend dependencies
 cd backend && npm install
@@ -108,7 +108,7 @@ Create (or edit) `backend/.env`:
 ```env
 PORT=5000
 MONGODB_URI=mongodb://127.0.0.1:27017/task-management-db
-JWT_SECRET=your_super_secret_key_here
+JWT_SECRET=secret_key_here
 ```
 
 ### 3. Seed the Database
