@@ -15,9 +15,17 @@
 
 ## 📸 Preview
 
-| Home Page | Admin Dashboard | Employee Dashboard |
-|:---------:|:---------------:|:-----------------:|
-| ![Home](screenshots/home.png) | ![Admin](screenshots/admin.png) | ![Employee](screenshots/employee.png) |
+**🏠 Home Page**
+
+![Home](screenshots/home.png)
+
+**🛡️ Admin Dashboard**
+
+![Admin](screenshots/admin.png)
+
+**👤 Employee Dashboard**
+
+![Employee](screenshots/employee.png)
 
 ---
 
