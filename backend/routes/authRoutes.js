@@ -60,7 +60,8 @@ router.post('/login', async (req, res) => {
     try {
         const user = await User.findOne({ email });
 
-        if (user && (await bcrypt.compare(password, user.password))) {
+        // Guard: user.password may be undefined if the DB has stale/incomplete documents
+        if (user && user.password && (await bcrypt.compare(password, user.password))) {
             res.json({
                 _id: user.id,
                 name: user.name,
@@ -76,6 +77,8 @@ router.post('/login', async (req, res) => {
         res.status(500).json({ message: 'Server Error' });
     }
 });
+
+
 // @route   GET /api/auth/users
 // @desc    Get all users (employees)
 // @access  Private/Admin
